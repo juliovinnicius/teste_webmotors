@@ -40,7 +40,7 @@ class CardWidget extends StatelessWidget {
                     borderRadius: BorderRadius.circular(15),
                     child: Center(
                       child: Image.network(
-                        httpsInImages(controller.list![index].image!),
+                        controller.list![index].image!,
                         errorBuilder: (context, error, stackTrace) => const Icon(
                           Icons.error,
                           size: 150,
